@@ -1,0 +1,62 @@
+/* Styles for common elements among pages */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	background-color: silver;
+	padding: 5px;
+}
+
+nav ul {
+	text-align: center;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+	padding: 5px;
+	margin: 0 5px 0 5px;
+}
+
+nav ul li:hover {
+	border-bottom: 5px solid black;
+}
+
+.active {
+	border-bottom: 5px solid navy;
+}
+
+a {
+	color: navy;
+	text-decoration: none;
+	font-family: monospace;
+	text-transform: capitalize;
+}
+
+body {
+	background-color: lightgrey;
+	font-family: arial, georgia, monospace, cursive, serif;
+	padding: 10px 30px;
+}
+
+main {
+	padding: 20px;
+}
+
+legend {
+	text-align: center;
+	text-transform: capitalize;
+	font-family: tahoma;
+	letter-spacing: 1px;
+	font-weight: bolder;
+}
+
+footer {
+	background-color: grey;
+	color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Connect</title>
+
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="chat.html">chat</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<form  action="#" method="post">
+			<fieldset>
+				<legend>create new account</legend>
+
+				<label>First Name: <br>
+					<input type="text" name="first-name" placeholder="John" required>				
+				</label>
+				<br>
+
+				<label>Last Name: <br>
+					<input type="text" name="last-name" placeholder="Doe">
+				</label>
+				<br>
+
+				<label>E-mail: <br>
+					<input type="email" name="email" placeholder="johndoe@gmail.com" required>
+				</label>
+				<br>
+
+				<label>Password: <br>
+					<input type="password" name="password" placeholder="*********" required>
+				</label>
+				<br>
+
+				<label>
+					<input type="radio" name="gender" checked> Male
+				</label>
+
+				<label>
+					<input type="radio" name="gender"> Female
+				</label>
+				<br>
+
+				<label>
+					<p>How/Where are you learning:</p>
+					<select name="colleges">
+						<option value="non" selected>Self study</option>
+						<option value="bcc" disabled>BlueCrest</option>
+						<option value="ipam" disabled>IPAM</option>
+						<option value="limk" disabled>Limkokwing</option>
+						<option value="ccmt" disabled>CCMT</option>
+					</select>
+				</label>
+				<br>
+
+				<label>
+					<p>What are you learning:</p>
+					<select>
+						<option selected>Web Development</option>
+						<option disabled>Python</option>
+						<option disabled>coming soon...</option>
+						<option disabled>coming soon...</option>
+						<option disabled>coming soon...</option>
+						<option disabled>coming soon...</option>
+					</select>
+				</label>
+				<br>
+
+				<button>Create Account</button>
+			</fieldset>			
+		</form>
+	</main>
+
+	<footer>
+		<small>&copy;NewDevs 2020</small>
+	</footer>
+</body>
+</html>
