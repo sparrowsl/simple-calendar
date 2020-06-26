@@ -48,14 +48,6 @@ main {
 	padding: 20px;
 }
 
-legend {
-	text-align: center;
-	text-transform: capitalize;
-	font-family: tahoma;
-	letter-spacing: 1px;
-	font-weight: bolder;
-}
-
 footer {
 	background-color: grey;
 	color: white;

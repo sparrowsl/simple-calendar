@@ -1,6 +1,6 @@
-# newdevs
+# SLAD
 
-- A place for developers to meet like-minded people, share, develop and participate on projects
+- A non profit organization looking to support Sierra Leoneans intreested in tech.
 
 ## Skills
 
