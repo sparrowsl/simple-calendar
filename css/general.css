@@ -49,6 +49,11 @@ main {
 }
 
 footer {
-	background-color: grey;
-	color: white;
+	background-color: silver;
+	color: black;
+	padding: 10px 0;
+}
+
+footer small {
+	font-size: 15px;
 }

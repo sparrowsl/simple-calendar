@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Connect</title>
+	<title>Create Account</title>
 
 	<link rel="stylesheet" type="text/css" href="css/general.css">
 	<link rel="stylesheet" type="text/css" href="css/account.css">
@@ -22,7 +22,7 @@
 	</header>
 
 	<main>
-		<form  action="#" method="post">
+		<form method="post">
 			<fieldset>
 				<h2>create new account</h2>
 
@@ -32,7 +32,7 @@
 				<br>
 
 				<label>Last Name: <br>
-					<input type="text" name="last-name" placeholder="Doe">
+					<input type="text" name="surname" placeholder="Doe">
 				</label>
 				<br>
 
@@ -42,34 +42,35 @@
 				<br>
 
 				<label>Password: <br>
-					<input type="password" name="password" placeholder="*********" required>
+					<input type="password" name="password" placeholder="Enter Password" required>
 				</label>
 				<br>
 
-				<label>
-					<input type="radio" name="gender" checked> Male
-				</label>
+				<p>Gender: 
+					<label>
+						<input type="radio" name="gender" checked> Male
+					</label>
 
-				<label>
-					<input type="radio" name="gender"> Female
-				</label>
-				<br>
+					<label>
+						<input type="radio" name="gender"> Female
+					</label>
+				</p>
 
 				<label>
 					<p>How/Where are you learning:</p>
 					<select name="colleges">
 						<option value="non" selected>Self study</option>
-						<option value="bcc" disabled>BlueCrest</option>
+						<option value="bcc" disabled>BlueCrest College</option>
 						<option value="ipam" disabled>IPAM</option>
 						<option value="limk" disabled>Limkokwing</option>
-						<option value="ccmt" disabled>CCMT</option>
+						<option value="ccmt" disabled>Canadian College of Modern Technology</option>
 					</select>
 				</label>
 				<br>
 
 				<label>
 					<p>What are you learning:</p>
-					<select>
+					<select name="courses">
 						<option selected>Web Development</option>
 						<option disabled>Python</option>
 						<option disabled>coming soon...</option>
@@ -86,7 +87,7 @@
 	</main>
 
 	<footer>
-		<small>&copy;SLAD 2020</small>
+		<small>&copy;SLAD 2020. All rights reserved</small>
 	</footer>
 </body>
 </html>

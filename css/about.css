@@ -1,0 +1,17 @@
+abbr {
+	font-weight: bolder;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: serif;
+	font-size: 22px;
+}
+
+article {
+	font-size: 20px;
+}
+
+section {
+	margin: 20px;
+	font-family: sans-serif;
+	line-height: 1.4em;
+}
