@@ -6,12 +6,11 @@ abbr {
 	font-size: 22px;
 }
 
-article {
-	font-size: 20px;
-}
-
 section {
 	margin: 20px;
+	padding: 10px 0;
 	font-family: sans-serif;
 	line-height: 1.4em;
+	font-size: 18px;
+	box-shadow: 2px 2px 2px silver;
 }

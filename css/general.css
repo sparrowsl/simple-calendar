@@ -5,22 +5,36 @@
 	margin: 0px;
 }
 
+body {
+	width: 90%;
+	margin: auto;
+  	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightgrey;
+
+}
+
 header {
 	background-color: silver;
-	padding: 5px;
+	padding: 0px;
+	margin-bottom: 20px;
+	position: sticky;
+	top: 0px;
+}
+
+nav {
+	padding: 10px 0px;
 }
 
 nav ul {
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 	text-transform: capitalize;
 }
 
 nav ul li {
 	display: inline;
 	list-style-type: none;
-	padding: 5px;
-	margin: 0 5px 0 5px;
+	padding: 4px 5px;
 }
 
 nav ul li:hover {
@@ -28,8 +42,13 @@ nav ul li:hover {
 }
 
 .active {
-	border-bottom: 5px solid navy;
+	background-color: lightgrey;
+	padding: 10px 5px;
 }
+
+.active:hover {
+	padding: 8px 5px 4px 5px;
+} 
 
 a {
 	color: navy;
@@ -38,22 +57,34 @@ a {
 	text-transform: capitalize;
 }
 
-body {
-	background-color: lightgrey;
-	font-family: arial, georgia, monospace, cursive, serif;
-	padding: 10px 30px;
-}
-
 main {
-	padding: 20px;
+	padding: 10px 0px;
 }
 
 footer {
 	background-color: silver;
 	color: black;
 	padding: 10px 0;
+	text-align: center;
 }
 
-footer small {
-	font-size: 15px;
+.accounts {
+	list-style-type: none;
+	margin-bottom: 10px;
+	padding: 5px 0;
+}
+
+.accounts li {
+	display: inline;
+	padding: 2px;
+}
+
+.media {
+	width: 50px;
+	height: auto;
+	border-radius: 30px;
+}
+
+.media:hover {
+	box-shadow: 2px 2px 5px lightgrey;
 }

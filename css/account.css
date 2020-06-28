@@ -1,25 +1,32 @@
 /* form style for creating new account */
 
 fieldset {
-	width: 50%;
+	width: 90%;
 	padding: 10px 20px;
 	margin: auto;
 	text-align: center;
 	border: none;
-	border-radius: 50px;
-	box-shadow: 4px 4px 5px grey, -4px -4px 5px grey;
+	border-radius: 30px;
+	box-shadow: 2px 2px 5px grey, -2px -2px 2px silver;
 }
 
-h2 {
+legend {
 	font-family: all;
 	font-size: 30px;
 	text-transform: capitalize;
-	margin-bottom: 10px;
+	background-color: lightgrey;
+	box-shadow: 2px 2px 2px silver;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+p {
+	margin: 15px 0;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email] {
-	width: 50%;
+	width: 80%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
@@ -33,20 +40,32 @@ input[type=text], input[type=password], input[type=email] {
 label {
 	font-family: tahoma;
 	font-size: 18px;
+	text-transform: capitalize;
+}
+
+label p {
+	margin: 5px 0px 0px 0px;
+}
+
+.to-block {
+	display: block;
 }
 
 select[name=courses], select[name=colleges] {
-	width: 40%;
+	width: 70%;
 	padding: 10px 20px;
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-sizing: border-box;
+	font-size: 15px;
+	font-family: verdana;
 }
 
-input[name=gender] {
-	margin: 20px 0;
+p input[name=gender] {
+	margin: 10px 0px 20px 0px;
+	text-transform: capitalize;
 }
 
 button {
@@ -57,10 +76,15 @@ button {
 	font-family: monospace;
 	background-color: #4CAF50;
 	color: white;
+	cursor: pointer;
 	border-radius: 20px;
 	border: none;
+	box-shadow: 2px 2px 4px grey;
+	margin-bottom: 10px;
 }
 
-button:hover {
-	box-shadow: 2px 2px 4px grey;
+/* tos = Terms of Service*/
+.tos { 
+	color: dodgerblue;
+	font-family: verdana;
 }

@@ -24,31 +24,33 @@
 	<main>
 		<form method="post">
 			<fieldset>
-				<h2>create new account</h2>
+				<legend>create new account</legend>
+				<p>Please fill in this form to create an account.</p>
 
-				<label>First Name: <br>
+				<label class="to-block">first name: <br>
 					<input type="text" name="first-name" placeholder="John" required>				
 				</label>
-				<br>
 
-				<label>Last Name: <br>
+				<label class="to-block">last name: <br>
 					<input type="text" name="surname" placeholder="Doe">
 				</label>
-				<br>
 
-				<label>E-mail: <br>
+				<label class="to-block">email: <br>
 					<input type="email" name="email" placeholder="johndoe@gmail.com" required>
 				</label>
-				<br>
 
-				<label>Password: <br>
+				<label class="to-block">password: <br>
 					<input type="password" name="password" placeholder="Enter Password" required>
 				</label>
-				<br>
 
-				<p>Gender: 
+				<label class="to-block">repeat password: <br>
+					<input type="password" name="repeat-passwd" placeholder="Enter Password" required>
+				</label>
+
+				<!-- Gender section -->
+				<p>Gender:  
 					<label>
-						<input type="radio" name="gender" checked> Male
+						<input type="radio" name="gender"> Male
 					</label>
 
 					<label>
@@ -56,32 +58,37 @@
 					</label>
 				</p>
 
+				<!-- end gender -->
+
+				<!-- college or method of learning -->
 				<label>
-					<p>How/Where are you learning:</p>
+					<p>learning method:</p>
 					<select name="colleges">
-						<option value="non" selected>Self study</option>
-						<option value="bcc" disabled>BlueCrest College</option>
-						<option value="ipam" disabled>IPAM</option>
-						<option value="limk" disabled>Limkokwing</option>
+						<option value="non" selected>Self Study</option>
+						<option value="bcc" disabled>BlueCrest College Sierra Leone</option>
+						<option value="ipam" disabled>Institute of Public Administration &amp; Management</option>
+						<option value="limko" disabled>Limkokwing University</option>
 						<option value="ccmt" disabled>Canadian College of Modern Technology</option>
+						<option value="njala" disabled>Njala University</option>
 					</select>
 				</label>
 				<br>
 
 				<label>
-					<p>What are you learning:</p>
+					<p>course:</p>
 					<select name="courses">
 						<option selected>Web Development</option>
 						<option disabled>Python</option>
-						<option disabled>coming soon...</option>
+						<option disabled>Other</option>
 						<option disabled>coming soon...</option>
 						<option disabled>coming soon...</option>
 						<option disabled>coming soon...</option>
 					</select>
 				</label>
-				<br>
 
-				<button>Create Account</button>
+				<p>By creating an account you agree to our <a href="#" class="tos">Terms &amp; Privacy</a>.</p>
+
+				<button>create account</button>
 			</fieldset>			
 		</form>
 	</main>
