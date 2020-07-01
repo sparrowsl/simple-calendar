@@ -46,10 +46,6 @@ nav ul li:hover {
 	padding: 10px 5px;
 }
 
-.active:hover {
-	padding: 8px 5px 4px 5px;
-} 
-
 a {
 	color: navy;
 	text-decoration: none;
