@@ -37,9 +37,10 @@ input[type=text], input[type=email] {
 
 textarea {
   width: 80%;
+  height: 90px;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box;
   margin-top: 10px;
   margin-bottom: 10px;

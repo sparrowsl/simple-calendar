@@ -1,16 +1,18 @@
-abbr {
-	font-weight: bolder;
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-family: serif;
-	font-size: 22px;
-}
-
 section {
-	margin: 20px;
-	padding: 10px 0;
+	padding: 10px;
 	font-family: sans-serif;
 	line-height: 1.4em;
 	font-size: 18px;
+}
+
+article {
+	margin: 20px 0;
+	padding: 10px;
 	box-shadow: 2px 2px 2px silver;
+}
+
+abbr {
+	font-weight: bold;
+	text-decoration: none;
+	font-family: verdana;
 }

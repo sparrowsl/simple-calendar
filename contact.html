@@ -13,8 +13,6 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="event.html">events</a></li>
 				<li><a href="about.html">about</a></li>
 				<li class="active"><a href="contact.html">contact</a></li>
 			</ul>
@@ -22,7 +20,7 @@
 	</header>
 
 	<main>
-		<form>
+		<form method="POST" data-netlify="true">
 			<fieldset>
 				<h2>Contact Us</h2>
 
@@ -34,7 +32,7 @@
 					<input type="email" name="email" placeholder="johndoe@gmail.com" required>
 				</label>
 
-				<textarea rows="4" placeholder="Enter message..."></textarea>
+				<textarea name="message" placeholder="Enter message..."></textarea>
 				<br>
 
 		   	 	<input type="submit" value="Submit">
