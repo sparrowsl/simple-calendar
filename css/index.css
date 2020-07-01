@@ -1,0 +1,100 @@
+
+h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 1px grey;
+}
+
+.intro {
+  text-align: center;
+  margin: 10px 0px;
+  padding: 10px 5px;
+  box-shadow: 1px 1px 1px silver;
+}
+
+.intro small {
+  display: block;
+  font-family: tahoma;
+  color: dodgerblue;
+  font-size: 16px;
+}
+
+.desc {
+  margin: 20px 0px 30px 0px;
+}
+
+p {
+  margin: 10px 0px;
+  padding: 10px 5px;
+  box-shadow: 1px 1px 2px silver;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+abbr {
+  text-decoration: none;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+form {
+  margin: 30px 0px;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 2px 2px 2px grey, -1px -1px 2px grey;
+  border-radius: 20px;
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+  font-family: tahoma;
+  background-image: url("../img/dark.jpg");
+  color: snow;
+}
+
+label {
+  display: block;
+}
+
+input[type=text], input[type=email] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type=submit] {
+  text-transform: capitalize;
+  color: white;
+  font-size: 17px;
+  border-radius: 30px;
+  background-color: #4CAF50;
+  cursor: pointer;
+  width: 25%;
+  padding: 10px 0px;
+  border: none;
+}
+
+span {
+  background-color: lightgrey;
+  cursor: pointer;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+}
+
+span > a {
+  color: dodgerblue;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: #45a049;
+  box-shadow: 2px 2px 2px dimgrey;
+}
