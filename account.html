@@ -25,7 +25,6 @@
 		<form method="post">
 			<fieldset>
 				<legend>create new account</legend>
-				<p>Please fill in this form to create an account.</p>
 
 				<label class="to-block">first name: <br>
 					<input type="text" name="first-name" placeholder="John" required>				
@@ -44,19 +43,16 @@
 				</label>
 
 				<!-- Gender section -->
-				<p>Gender:  
-					<label>
+				<p id="gender">Gender:  
+					<span>
 						<input type="radio" name="gender"> Male
-					</label>
 
-					<label>
 						<input type="radio" name="gender"> Female
-					</label>
+					</span>
 				</p>
-
 				<!-- end gender -->
 
-				<!-- college or method of learning -->
+				<!-- courses and method of learning -->
 				<label>
 					<p>learning method:</p>
 					<select name="colleges">
@@ -74,8 +70,9 @@
 					<p>what course are you learning:</p>
 					<select name="courses">
 						<option value="py" selected>Python</option>
-						<option value="webdev" >HTML/CSS &amp; JavaScript</option>
-						<option value="network" disabled>Networking</option>
+						<option value="web">HTML/CSS</option>
+						<option value="js" disabled>JavaScript</option>
+						<option value="net" disabled>Networking</option>
 						<option value="java" disabled>Java</option>
 						<option value="sql" disabled>SQL/NoSQL</option>
 						<option value="other" disabled>Other</option>

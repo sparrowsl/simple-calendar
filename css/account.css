@@ -41,14 +41,15 @@ label {
 	font-family: tahoma;
 	font-size: 18px;
 	text-transform: capitalize;
+	display: block;
 }
 
 label p {
 	margin: 5px 0px 0px 0px;
 }
 
-.to-block {
-	display: block;
+p#gender {
+	font-size: 20px;
 }
 
 select[name=courses], select[name=colleges] {

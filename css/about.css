@@ -1,18 +1,12 @@
-section {
+article {
 	padding: 10px;
 	font-family: sans-serif;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	font-size: 18px;
 }
 
-article {
+section {
 	margin: 20px 0;
 	padding: 10px;
-	box-shadow: 2px 2px 2px silver;
-}
-
-abbr {
-	font-weight: bold;
-	text-decoration: none;
-	font-family: verdana;
+	box-shadow: 3px 3px 4px silver;
 }
