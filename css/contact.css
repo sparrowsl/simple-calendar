@@ -69,3 +69,22 @@ input[type=submit] {
   margin: auto;
   width: 20%;
 }
+
+
+@media screen and (max-width: 450px)  {
+  form {
+    width: 85%;
+  }
+
+  input[type=text], input[type=email] {
+    width: 75%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  input[type=submit] {
+    width: 35%;
+  }
+}

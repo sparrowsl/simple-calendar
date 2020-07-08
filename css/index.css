@@ -33,7 +33,7 @@ p {
 
 form {
   margin: 30px auto;
-  width: 70%;
+  width: 50%;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -53,7 +53,7 @@ label {
 
 input[type=text], input[type=email] {
   width: 55%;
-  padding: 15px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 30px;
   box-sizing: border-box;
@@ -63,7 +63,7 @@ input[type=text], input[type=email] {
   text-align: center;
 }
 
-input[type=submit] {
+input[type=submit], span {
   text-transform: capitalize;
   color: white;
   font-size: 17px;
@@ -71,7 +71,28 @@ input[type=submit] {
   background-color: #4CAF50;
   cursor: pointer;
   width: 20%;
-  padding: 10px 0px;
+  padding: 8px 5px;
   border: none;
   margin: 10px;
+}
+
+fieldset span {
+  padding: 8px 25px;
+}
+
+
+@media screen and (max-width: 450px) {
+  form {
+    width: 85%;
+  }
+
+  input[type=text], input[type=email] {
+    width: 75%;
+  }
+
+  input[type=submit] {
+    width: 40%;
+    display: block;
+    margin: 10px auto; 
+  }
 }

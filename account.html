@@ -26,35 +26,37 @@
 			<fieldset>
 				<legend>create new account</legend>
 
-				<label class="to-block">first name: <br>
+				<label><span class="-hide">first name:</span> 
 					<input type="text" name="first-name" placeholder="John" required>				
 				</label>
 
-				<label class="to-block">last name: <br>
+				<label><span class="-hide">last name:</span> 
 					<input type="text" name="surname" placeholder="Doe">
 				</label>
 
-				<label class="to-block">email: <br>
+				<label><span class="-hide">email:</span>
 					<input type="email" name="email" placeholder="johndoe@gmail.com" required>
 				</label>
 
-				<label class="to-block">password: <br>
+				<label><span class="-hide">password:</span> 
 					<input type="password" name="password" placeholder="Enter Password" required>
 				</label>
 
 				<!-- Gender section -->
-				<p id="gender">Gender:  
-					<span>
+				<div><span class="-hide">Gender:</span>  
+					<label class="inline-gender">
 						<input type="radio" name="gender"> Male
+					</label>
 
+					<label class="inline-gender">
 						<input type="radio" name="gender"> Female
-					</span>
-				</p>
+					</label>
+				</div>
 				<!-- end gender -->
 
 				<!-- courses and method of learning -->
 				<label>
-					<p>learning method:</p>
+					<span>learning method:</span>
 					<select name="colleges">
 						<option value="non" selected>Self Study</option>
 						<option value="bcc" disabled>BlueCrest College Sierra Leone</option>
@@ -64,10 +66,10 @@
 						<option value="njala" disabled>Njala University</option>
 					</select>
 				</label>
-				<br>
+				
 
 				<label>
-					<p>what course are you learning:</p>
+					<span>learning track:</span>
 					<select name="courses">
 						<option value="py" selected>Python</option>
 						<option value="web">HTML/CSS</option>
@@ -75,13 +77,15 @@
 						<option value="net" disabled>Networking</option>
 						<option value="java" disabled>Java</option>
 						<option value="sql" disabled>SQL/NoSQL</option>
-						<option value="other" disabled>Other</option>
+						<option value="other" disabled>...</option>
 					</select>
 				</label>
 
-				<p>By creating an account you agree to our <a href="#" class="tos">Terms &amp; Privacy</a>.</p>
+				<div>
+					<p>By creating an account you agree to our <a href="#" class="tos">Terms &amp; Privacy</a>.</p>
 
-				<button>create account</button>
+					<button>create account</button>
+				</div>
 			</fieldset>			
 		</form>
 	</main>
