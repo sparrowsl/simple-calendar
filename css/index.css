@@ -33,7 +33,7 @@ p {
 
 form {
   margin: 30px auto;
-  width: 50%;
+  width: 60%;
   text-align: center;
   color: white;
   font-size: 20px;
@@ -63,7 +63,7 @@ input[type=text], input[type=email] {
   text-align: center;
 }
 
-input[type=submit], span {
+button {
   text-transform: capitalize;
   color: white;
   font-size: 17px;
@@ -71,28 +71,44 @@ input[type=submit], span {
   background-color: #4CAF50;
   cursor: pointer;
   width: 20%;
-  padding: 8px 5px;
+  padding: 10px 0px;
   border: none;
-  margin: 10px;
 }
 
 fieldset span {
-  padding: 8px 25px;
+  padding: 10px 30px;
+  background-color: #4CAF50;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+fieldset span > a {
+  color: white;
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 850px) {
   form {
-    width: 85%;
+    width: 60%;
   }
 
   input[type=text], input[type=email] {
-    width: 75%;
+    width: 80%;
   }
 
-  input[type=submit] {
-    width: 40%;
+  button {
     display: block;
-    margin: 10px auto; 
+    width: 50%;
+    margin: 5px auto 20px;
+  }
+
+  fieldset span {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  fieldset span {
+    padding: 10px 30px;
   }
 }

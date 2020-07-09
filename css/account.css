@@ -89,6 +89,18 @@ button {
 }
 
 
+@media screen and (max-width: 650px) {
+	legend {
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	button {
+		width: 70%;
+	}
+}
+
+
 @media screen and (max-width: 500px) {
 	form {
 		width: 98%;
