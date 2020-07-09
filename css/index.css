@@ -87,13 +87,14 @@ fieldset span > a {
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 450px) {
   form {
-    width: 60%;
+    width: 90%;
   }
 
   input[type=text], input[type=email] {
-    width: 80%;
+    width: 85%;
+    border-radius: 20px;
   }
 
   button {
@@ -103,12 +104,6 @@ fieldset span > a {
   }
 
   fieldset span {
-    padding: 10px 50px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  fieldset span {
-    padding: 10px 30px;
+    padding: 10px 45px;
   }
 }
