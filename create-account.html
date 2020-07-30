@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create Account</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container my-3">
+	<nav class="navbar navbar-expand-md bg-dark">
+		<!-- Links -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+
+		<h2 class="text-center display-4 my-3">Create New Account</h2>
+
+		<form method="POST" class="p-5 shadow">
+
+			<div class="form-group">
+				<label for="fname">First Name:</label>
+				<input type="text" class="form-control" placeholder="First Name" id="fname" required>
+			</div>
+
+			<div class="form-group">
+				<label for="lname">Last Name:</label>
+				<input type="text" class="form-control" placeholder="Last Name" id="lname">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" placeholder="Enter email" id="email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" placeholder="Enter password" id="pwd" required>
+			</div>
+
+			<div class="form-group">
+				<label for="con_pwd">Confirm Password:</label>
+				<input type="password" class="form-control" placeholder="Confirm password" id="con_pwd" required>
+			</div>
+
+			<!-- Gender section -->
+			<div class="form-check-inline">
+				<label>
+				  <span>Gender:</span>
+				</label>
+			</div>
+			
+			  <div class="form-check-inline">
+				<label class="form-check-label">
+				  <input type="radio" class="form-check-input" name="gender">Male
+				</label>
+			</div>
+
+			<div class="form-check-inline disabled">
+				<label class="form-check-label">
+				  <input type="radio" class="form-check-input" name="gender">Female
+				</label>
+			</div>
+			<!-- End gender -->
+
+			<!-- courses and method of learning -->
+
+			<div class="form-group">
+				<label for="learn_style">Your Learning Style:</label>
+				<select class="form-control" id="learn_style">
+					<option value="non" selected>Self Study</option>
+					<option value="bcc">BlueCrest College Sierra Leone</option>
+					<option value="ipam">Institute of Public Administration &amp; Management</option>
+					<option value="cds">Competency Development Services</option>
+					<option value="limko" disabled>Limkokwing University</option>
+					<option value="ccmt" disabled>Canadian College of Modern Technology</option>
+					<option value="njala" disabled>Njala University</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="learn_track">Your Learning Track:</label>
+				<select class="form-control" id="learn_track">
+					<option value="basic" selected>Basic ICT</option>
+					<option value="py">Python</option>
+					<option value="web">HTML/CSS</option>
+					<option value="js" disabled>JavaScript</option>
+					<option value="network" disabled>Networking</option>
+					<option value="java" disabled>Java</option>
+					<option value="sql" disabled>SQL/NoSQL</option>
+				</select>
+			</div>
+
+			<div>
+				</p>By creating an account you agree to our 
+					<a href="#" class="tos">Terms &amp; Privacy</a>.
+			</div>
+			
+			<button type="submit" class="btn btn-success my-4">Create Account</button>
+		</form>
+	</main>
+
+	<footer class="my-3 p-3">
+		<nav class="nav navbar-expand-sm">
+			<ul class="navbar-nav">
+				<li><a href="#" class="btn btn-outline-secondary">Email</a></li>
+
+				<li><a href="#" class="btn btn-outline-secondary">Facebook</a></li>
+
+				<li><a href="#" class="btn btn-outline-secondary">LinkedIn</a></li>
+
+				<li><a href="#" class="btn btn-outline-secondary">Twitter</a></li>
+			</ul>
+		</nav>
+
+		<small>&copy;SLAD 2020. All rights reserved</small>
+	</footer>
+</body>
+</html>
