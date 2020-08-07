@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Create Account</title>
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -91,7 +92,7 @@
 					<option value="non" selected>Self Study</option>
 					<option value="bcc">BlueCrest College Sierra Leone</option>
 					<option value="ipam">Institute of Public Administration &amp; Management</option>
-					<option value="cds">Competency Development Services</option>
+					<option value="cds">Competency College of Technology</option>
 					<option value="limko">Limkokwing University</option>
 					<option value="ccmt">Canadian College of Modern Technology</option>
 					<option value="njala">Njala University</option>
@@ -101,12 +102,13 @@
 			<div class="form-group">
 				<label for="track">Your Learning Track:</label>
 				<select class="form-control" id="track">
-					<option value="basic" selected>Basic ICT</option>
+					<option value="ict">ICT</option>
 					<option value="py">Python</option>
-					<option value="web">HTML/CSS</option>
+					<option value="web" selected>HTML/CSS</option>
 					<option value="js">JavaScript</option>
 					<option value="network">Networking</option>
-					<option value="info_sys">Information System</option>
+					<option value="info_sys">Information Systems</option>
+					<option value="it">Information Technology</option>
 					<option value="java">Java</option>
 					<option value="sql">SQL/NoSQL</option>
 					<option value="hardware">Hardware</option>
@@ -115,10 +117,10 @@
 
 			<div>
 				</p>By creating an account you agree to our 
-					<a href="#" class="tos">Terms &amp; Privacy</a>.
+					<a href="terms-and-privacy.html">Terms &amp; Privacy</a>.
 			</div>
 			
-			<button type="submit" class="btn btn-success my-4">Create Account</button>
+			<button type="submit" class="btn btn-success my-4" onclick="disable()">Create Account</button>
 		</form>
 	</main>
 
@@ -141,7 +143,13 @@
 			</div>
 		</div>
 
-		<small>&copy; SLAD 2020. All rights reserved</small>
+		<small>&copy;SLAD 2020. All rights reserved</small>
 	</footer>
+
+	<script>
+		function disable() {
+			alert("Sorry, account access unavailable, check back later!");
+		}
+	</script>
 </body>
 </html>

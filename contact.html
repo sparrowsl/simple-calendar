@@ -52,7 +52,7 @@
 				<textarea class="form-control" rows="5" id="msg" placeholder="I love this organization..."></textarea>
 			</div>
 
-			<button type="submit" class="btn btn-info">Send</button>
+			<button type="submit" class="btn btn-info" onclick="notActive()">Send</button>
   		</form>
 	</main>
 
@@ -75,7 +75,13 @@
 			</div>
 		</div>
 
-		<small>&copy; SLAD 2020. All rights reserved</small>
+		<small>&copy;SLAD 2020. All rights reserved</small>
 	</footer>
+
+	<script>
+		function notActive() {
+			alert("Contact form is unavailable at the moment");			
+		}
+	</script>
 </body>
 </html>

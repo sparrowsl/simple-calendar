@@ -46,7 +46,7 @@
 			<p class="lead p-4 text-center">Join us in our journey to make Sierra Leone a better place.</p>
 		</div>
 		  		  
-		<form action="#" method="POST" class="p-5 shadow">
+		<form action="#" method="POST" class="p-5 border">
 			<div class="form-group">
 				<label for="email">Email address:</label>
 				<input type="email" class="form-control" placeholder="Enter email" id="email" required>
@@ -63,7 +63,7 @@
 				</label>
 			</div>
 
-			<button type="submit" class="btn btn-success">Log In</button>
+			<button type="submit" class="btn btn-success" onclick="deniedAccess()">Log In</button>
 			<span>or</span>
 			<a href="create-account.html" class="btn btn-info">Sign Up</a>
 		</form>
@@ -88,7 +88,13 @@
 			</div>
 		</div>
 
-		<small>&copy; SLAD 2020. All rights reserved</small>
+		<small>&copy;SLAD 2020. All rights reserved</small>
 	</footer>
+
+	<script>
+		function deniedAccess() {
+			alert("Login access is unavailable at this moment");
+		}
+	</script>
 </body>
 </html>
