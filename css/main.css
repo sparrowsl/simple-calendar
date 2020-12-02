@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1% 5%;
+    font-family: Arial, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+header{
+    background-color: rgb(33, 33, 51);
+    overflow: hidden;
+    padding: 5px;
+}
+
+header nav{
+    display: flex;
+    /* overflow: hidden; */
+}
+
+header nav ul{
+    display: flex;
+    margin: auto;
+    /* align-items: center; */
+}
+
+header nav ul li{
+    flex-basis: 300px;
+}
+
+header nav ul li a{
+    border: 1px solid rgb(129, 129, 185);
+    color: rgb(240, 146, 6);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(130, 160, 180);
+    color: white;
+}
+
+nav span{
+    width: 100px;
+    height: 100px;
+    color: rgb(214, 146, 57);
+    background-color: rgb(127, 134, 134);
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(60, 60, 102);
+    box-shadow: 2px 2px 2px rgb(65, 42, 42);
+    border-radius: 50%;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+ul a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+footer{
+    font-style: italic;
+}
+
+footer ul{
+    display: flex;
+}
+
+@media screen and (max-width: 450px){
+    /* body{
+        background-color: rgb(219, 219, 223);
+    }
+     */
+
+    nav span{
+        width: 50px;
+        height: 50px;
+    }
+
+    header{
+        margin: 0px;
+    }
+
+    header nav{
+        /* flex-direction: column; */
+        overflow: hidden;
+    }
+
+    nav span{
+        margin: auto auto 10px auto;
+    }
+
+    header nav ul{
+        /* margin-top: ; */
+    }
+}
