@@ -26,41 +26,43 @@
 			<fieldset>
 				<legend>Create New Account</legend>
 				<div>
-					<label for="fname">First Name:</label>
-					<input type="text" placeholder="John" name="fname" required>
+					<label for="name">Name:</label>
+					<input type="text" placeholder="John Doe" name="name" id="name">
 				</div>
 	
 				<div>
-					<label for="lname">Last Name:</label>
-					<input type="text" placeholder="Doe" name="lname">
+					<label for="username">username:</label>
+					<input type="text" placeholder="johndoe" name="username" id="username" required>
 				</div>
 	
 				<div>
 					<label for="email">Email:</label>
-					<input type="email" placeholder="johndoe@gmail.com" name="email" required>
+					<input type="email" placeholder="johndoe@gmail.com" name="email" id="email" required>
 				</div>
 	
 				<div>
-					<label for="password">Password:</label>
-					<input type="password" placeholder="Enter password" name="password" required>
+					<label for="passwd">Password:</label>
+					<input type="password" placeholder="******" name="password" id="passwd" required>
 				</div>
 	
 				<!-- Gender section -->
 				<div class="gender">
 					<span>Gender:</span>
 				
-					<label for="male">Male
-					<input type="radio" name="gender">
-	
-					<label for="female">Female</label>
-					<input type="radio" name="gender">
+					<label>
+						Male <input type="radio" name="gender" value="male">
+					</label>
+					
+					<label>
+						Female <input type="radio" name="gender" value="female">
+					</label>
 				</div>
 				<!-- End gender -->
 	
 				<!-- courses and method of learning -->
 				<div>
-					<label for="learn_style">Institution:</label>
-					<select name="learn_style">
+					<label>Institution:</label>
+					<select name="institution">
 						<option value="non" selected>Self Study</option>
 						<option value="bcc">BlueCrest College Sierra Leone</option>
 						<option value="ipam">Institute of Public Administration &amp; Management</option>
@@ -73,7 +75,7 @@
 				</div>
 	
 				<div>
-					<label for="course">Your Current Course:</label>
+					<label>Your Current Course:</label>
 					<select name="course">
 						<option value="ict" selected>ICT</option>
 						<option value="python">Python</option>
