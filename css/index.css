@@ -1,0 +1,107 @@
+section #intro-head{
+    margin: 10px 0px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+#intro-head h1{
+    margin: 0px;
+    font-size: 40px;
+}
+
+#intro-head small{
+    font-size: 16px;
+    /* font-weight: lighter; */
+}
+
+#intro{
+    padding: 0px 5px;
+}
+
+form{
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80%;
+    margin: 0px auto;
+}
+
+form div{
+    margin: 10px 0px;
+}
+
+form label span{
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+    width: 110px;
+    padding-top: 5px;
+}
+
+input[type="text"], input[type="password"]{
+    width: 80%;
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 100px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+legend{
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color: rgb(214, 214, 214);
+    color: rgb(5, 17, 41);
+    font-size: 22px;
+}
+
+form p{
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+form p a{
+    text-decoration: none;
+    background-color: rgb(40, 59, 59);
+    color: rgb(3, 243, 43);
+    padding: 3px 8px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px rgb(35, 41, 41);
+}
+
+@media screen and (max-width: 470px){
+    form{
+        width: 100%;
+    }
+
+    fieldset{
+        border: none;
+    }
+
+    form div{
+        margin: 10px auto;
+        padding: 0px;
+    }
+
+    legend{
+        display: none;
+    }
+    
+    input[type="text"], input[type="password"]{
+        width: 100%;
+    }
+
+    input[type="submit"]{
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;    
+    }
+}

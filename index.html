@@ -24,33 +24,41 @@
 	</header>
 
 	<main>
-		<div>
-			<div>
+		<section>
+			<div id="intro-head">
 				<h1>Sierra Leone Association for Developers</h1>
-				<p><q>If you believe in yourself anything is possible because Decision defines Destiny</q></p>
+				<small><q>If you believe in yourself anything is possible because <b>Decision defines Destiny</b></q></small>
 			</div>
-	
-			<div>
-				<p><b title="Sierra Leone Association for Developers">SLAD</b> is a non profit organization with 
+
+			<div id="intro">
+				<p>
+					<b title="Sierra Leone Association for Developers">SLAD</b> is a non profit organization with 
 					the aim of helping Sierra Leoneans that are passionate about tech by <b><em>Organizing Hackatons,
-					Bootcamps and Competitions</em></b> in order to promote technology in Sierra Leone.</p>
+					Bootcamps and Competitions</em></b> in order to promote technology in Sierra Leone.
+				</p>
 	
-				<p>Join us in our journey to make Sierra Leone a better place.</p>
+				<p>Join us in our journey and turn Sierra Leoneans to better developers.</p>
 			</div>	
-		</div>
-		  		  
+		</section>
+
 		<form action="#" method="POST">
-			<div>
-				<label for="name">Username:</label>
-				<input type="name" placeholder="john" name="name" required>
-			</div>
+			<fieldset>
+				<legend>Login</legend>
 
-			<div>
-				<label for="password">Password:</label>
-				<input type="password" placeholder="Enter password" name="password" required>
-			</div>
-
-			<p><input type="submit" value="Login"> or <a href="create-account.html">Sign Up</a></p>
+				<div>
+					<label>
+						<span>Username:</span><input type="text" placeholder="johndoe" name="name" required>
+					</label>
+				</div>
+	
+				<div>
+					<label>
+						<span>Password:</span><input type="password" placeholder="********" name="password" required>
+					</label>
+				</div>
+	
+				<p><input type="submit" value="Login"> or <a href="signup.html">Sign Up</a></p>
+			</fieldset>
 		</form>
 	</main>
 
@@ -62,7 +70,7 @@
 			<li><a href="#">Twitter</a></li>
 		</ul>
 
-		<p>Copyright&copy; - SLAD 2020. All rights reserved</p>
+		<small>Copyright&copy; - SLAD 2020. All rights reserved</small>
 	</footer>
 </body>
 </html>
