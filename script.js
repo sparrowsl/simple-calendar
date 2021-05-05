@@ -13,13 +13,21 @@ let today = new Date();
 
 setInterval(function () {
   today = new Date();
-  if (today.getSeconds() < 10) {
+  if (today.getHours() < 10) {
     currentHour.innerText = `0${today.getHours()}`;
-    currentMinute.innerText = `0${today.getMinutes()}`;
-    currentSecond.innerText = `0${today.getSeconds()}`;
   } else {
     currentHour.innerText = today.getHours();
+  }
+
+  if (today.getMinutes() < 10) {
+    currentMinute.innerText = `0${today.getMinutes()}`;
+  } else {
     currentMinute.innerText = today.getMinutes();
+  }
+
+  if (today.getSeconds() < 10) {
+    currentSecond.innerText = `0${today.getSeconds()}`;
+  } else {
     currentSecond.innerText = today.getSeconds();
   }
 }, 990);
