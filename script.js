@@ -3,6 +3,7 @@ let currentDate = document.querySelector('.date');
 let currentDay = document.querySelector('.day');
 let currentYear = document.querySelector('.year');
 let currentMonth = document.querySelector('.month');
+let dateExtension = document.querySelector('.th');
 
 const timeBox = document.querySelector('.time');
 let currentHour = document.querySelector('.hour');
@@ -13,8 +14,8 @@ let today = new Date();
 
 setInterval(function () {
   today = new Date();
-  if (formatHour(today.getHours()) < 10) {
-    currentHour.innerText = `0${formatHour(today.getHours())}`;
+  if (today.getHours() < 10) {
+    currentHour.innerText = `0${today.getHours()}`;
   } else {
     currentHour.innerText = today.getHours();
   }
@@ -34,73 +35,38 @@ setInterval(function () {
 
 currentMonth = today.toDateString().split(' ')[1];
 currentDay.innerText = `${getFullDayName(today.toDateString().split(' ')[0])} : ${currentMonth}`;
-currentDate.innerText = today.toDateString().split(' ')[2]
+currentDate.innerText = today.toDateString().split(' ')[2];
 currentYear.innerText = today.toDateString().split(' ')[3];
 
-function formatHour(time){
-  let hour = time;
-  switch(time){
-    case 13:
-      hour = 1;
-      break;
-    case 14:
-      hour = 2;
-      break;
-    case 15:
-      hour = 3;
-      break;
-    case 16:
-      hour = 4;
-      break;
-    case 17:
-      hour = 5;
-      break;
-    case 18:
-      hour = 6;
-      break;
-    case 19:
-      hour = 7;
-      break;
-    case 20:
-      hour = 8;
-      break;
-    case 21:
-      hour = 9;
-      break;
-    case 22:
-      hour = 10;
-      break;
-    case 23:
-      hour = 11;
-      break;
+// run this script every day
+setInterval(function(){
+  if(currentDate.innerText == 1){
+    dateExtension.innerText = 'st';
+  }else if(currentDate.innerText == 2){
+    dateExtension.innerText = 'nd';
+  }else if(currentDate.innerText == 3){
+    dateExtension.innerText = 'rd';
+  } else{
+    dateExtension.innerText = 'th';
   }
-  return hour;
-}
+}, 1_450_000);
+
 
 function getFullDayName(day) {
-  let dayName = "";
   switch (day.toLowerCase()) {
     case 'mon':
-      dayName = "Monday";
-      break;
+      return "Monday";
     case 'tue':
-      dayName = "Tuesday";
-      break;
+      return "Tuesday";
     case 'wed':
-      dayName = "Wednesday";
-      break;
+      return "Wednesday";
     case 'thu':
-      dayName = "Thursday";
-      break;
+      return "Thursday";
     case 'fri':
-      dayName = "Friday";
-      break;
+      return "Friday";
     case 'sat':
-      dayName = "Saturday";
-      break;
+      return "Saturday";
     case 'sun':
-      dayName = "Sunday";
-      break;
+      return "Sunday";
   }
-  return dayName;
 }
